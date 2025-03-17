@@ -9,7 +9,7 @@ return {
                 n = {
                     -- second key is the lefthand side of the map
                     ["<Leader>bn"] = { "<cmd>tabnew<cr>", desc = "New tab" },
-                    
+
                     ["L"] = {
                         function() require("astrocore.buffer").nav(vim.v.count1) end,
                         desc = "Next buffer",
@@ -17,7 +17,9 @@ return {
                     ["H"] = {
                         function() require("astrocore.buffer").nav(-vim.v.count1) end,
                         desc = "Previous buffer",
-                    }
+                    },
+                    ["<Leader><space>"] = { function() require("telescope.builtin").find_files() end, desc = "Find files" }
+
 
                 },
                 t = {
