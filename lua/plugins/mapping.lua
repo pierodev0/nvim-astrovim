@@ -6,11 +6,11 @@ return {
     opts = {
       mappings = {
         n = {
-          ["<S-h>"] = {
+          ["<S-k>"] = {
             function() require("astrocore.buffer").nav(vim.v.count1) end,
             desc = "Next buffer",
           },
-          ["<S-l>"] = {
+          ["<S-j>"] = {
             function() require("astrocore.buffer").nav(-vim.v.count1) end,
             desc = "Previous buffer",
           },
