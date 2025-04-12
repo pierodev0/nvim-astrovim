@@ -11,4 +11,5 @@ return {
   { import = "astrocommunity.pack.typescript" },
   { import = "astrocommunity.pack.tailwindcss" },
   { import = "astrocommunity.motion.mini-surround" },
+  { import = "astrocommunity.motion.flash-nvim" }
 }
